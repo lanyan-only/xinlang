@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>新浪新闻</title>
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/show.css">
+    <script src="js/animate.js"></script>
+   
+    <script src="js/database.js"></script>
+   <script type="text/javascript"src="js/zepto.min.js"></script>
+   
+</head>
+<body>
+  <div class="top">
+    <div class="top-one"></div>
+    <div class="top-two"></div>
+    <div class="top-three"></div>
+    <div class="top-four"></div>
+  </div>
+<div class="contentbox">
+
+   <p class="date">2016年3月7日</p> 
+   <p class="title"><b>这是一个标题</b></p>
+   <img src="img/12-huiyi.png" alt=""width="90%">
+   <i class="iconfont icon-wuuiconshezhi"></i>
+   <p class="keyword">人大代表</p> 
+   <p class="content">人大代表会议</p>
+</div>
+</body>
+<script>
+document.addEventListener('plusready',function(){
+  var w=plus.webview.currentWebview();
+  var id=w.xx;
+  var shuju=liebiaos.filter(function(v,i){
+   return v.id==id;
+  })
+  
+  $(".date").text(shuju[0].date);
+  $('.title').text(shuju[0].title);
+  $('img').attr("src",shuju[0].src);
+  $('.keyword').text(shuju[0].content);
+  $('.content').text(shuju[0].neirong);
+  $('.top-one').tap(function(){
+   w.close();
+  })
+})
+ 
+</script>
+</html>

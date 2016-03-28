@@ -1,0 +1,69 @@
+body,ul,li,p,input,h1,h2,h3,h4,h5,h6,table{
+  padding:0;
+  margin:0;
+  list-style: none;
+
+}
+
+.top{
+	height:48px;
+	border-bottom: 1px solid #ddd;
+	padding:10px;
+    background: #f7f7f7;
+}
+.top-one{
+	width:50px;
+	height:24px;
+	background: url(../img/show1.png) no-repeat 14px;
+	background-size:30px auto;
+	line-height: 30px;
+	float:left;
+}
+.top-two{
+	width:30px;
+	height:24px;
+	background: url(../img/show2.png) no-repeat 0 2px;
+	background-size:25px auto;
+	line-height: 30px;
+	float:left;
+	margin-left: 30%;
+}
+.top-three{
+	width:30px;
+	height:24px;
+	background: url(../img/show3.png) no-repeat;
+	background-size:25px auto;
+	line-height: 30px;
+	float:left;
+	margin-left: 11%;
+}
+.top-four{
+	width:30px;
+	height:26px;
+	background: url(../img/show4.png) no-repeat 0 0px;
+	background-size:25px auto;
+	line-height: 30px;
+	float:left;
+	margin-left:  11%;
+}
+.contentbox{
+	padding:20px;
+}
+.date{
+	line-height: 30px;
+	color:#333;
+}
+.title{
+	font-size: 30px;
+}
+.keyword{
+	font-size: 20px;
+	text-indent: 1em;
+
+}
+.content{
+	font-size: 13px;
+	text-indent: 2em;
+}
+
+
